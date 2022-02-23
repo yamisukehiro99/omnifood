@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600;1,900&display=swap');
-
+:root {
+  --mainColor: #e67e22;
+}
 * {
   padding: 0;
   margin: 0;
@@ -24,6 +25,7 @@ body {
 
 .hero {
   margin: 0 auto;
+  padding: 0 3.2rem;
   max-width: 130rem;
   display: grid;
   align-items: center;
@@ -90,4 +92,41 @@ body {
 
 .margin-right-sm {
   margin-right: 1.6rem !important;
+}
+
+.customers {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-top: 8rem;
+}
+
+.customers-p {
+  display: flex;
+}
+
+.customer-pic {
+  height: 4.8rem;
+  width: 4.8rem;
+  border: 0.3rem solid white;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.customer-pic:not(:first-child) {
+  margin-left: -1.6rem;
+}
+
+.achiv {
+  font-size: 1.7rem;
+  line-height: 1.6;
+  font-weight: 600;
+}
+
+.achiv span {
+  color: #b8651b;
+  font-weight: 800;
 }
